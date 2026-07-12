@@ -1,0 +1,57 @@
+{
+  "mission_id": "d75a4b050a8a",
+  "task": "Go to https://news.ycombinator.com and report the exact title of the current #1 story and which domain it links to.",
+  "executor_session_id": "0f96af0c-7ff5-44c8-9b7f-a197381392be",
+  "executor_agent": "h/web-surfer-flash",
+  "verifier_agent": "h/web-surfer-pro",
+  "verifier_session_ids": [
+    "e2974fc4-d471-4a60-a3a1-663719185be1"
+  ],
+  "attempts": [
+    {
+      "n": 1,
+      "claimed_answer": "The #1 story on Hacker News is titled **\"Show HN: Mindwalk – Replay coding-agent sessions on a 3D map of your codebase\"** and it links to **github.com/cosmtrek**.",
+      "verdict": {
+        "verified": true,
+        "confidence": 1.0,
+        "checked_claims": [
+          {
+            "claim": "The #1 story title is 'Show HN: Mindwalk – Replay coding-agent sessions on a 3D map of your codebase'",
+            "observed": "Rank #1 on Hacker News displays: 'Show HN: Mindwalk – Replay coding-agent sessions on a 3D map of your codebase' (github.com/cosmtrek), 56 points by cosmtrek 4 hours ago, 21 comments",
+            "matches": true
+          },
+          {
+            "claim": "The #1 story links to github.com/cosmtrek",
+            "observed": "The domain shown next to the #1 story is github.com/cosmtrek",
+            "matches": true
+          }
+        ],
+        "divergence": null,
+        "diagnosis": null
+      },
+      "healed_with": null,
+      "elapsed_s": 57.1
+    }
+  ],
+  "final_status": "verified",
+  "final_answer": "The #1 story on Hacker News is titled **\"Show HN: Mindwalk – Replay coding-agent sessions on a 3D map of your codebase\"** and it links to **github.com/cosmtrek**.",
+  "agent_view": "https://platform.hcompany.ai/agent-view/0f96af0c-7ff5-44c8-9b7f-a197381392be",
+  "verifier_views": [
+    "https://platform.hcompany.ai/agent-view/e2974fc4-d471-4a60-a3a1-663719185be1"
+  ],
+  "local_audit": {
+    "engine": "Holo-3.1-35B-A3B q4_k_m via llama.cpp (on-device, Apple Silicon)",
+    "checked_observation": "The domain shown next to the #1 story is github.com/cosmtrek",
+    "result": "Yes. The domain shown next to the #1 story is github.com/cosmtrek.",
+    "shots_checked": 1,
+    "supports": true,
+    "latency_s": 4.76
+  },
+  "arbiter": null,
+  "arbiter_view": null,
+  "started_at": "2026-07-12T03:13:18-0700",
+  "finished_at": "2026-07-12T03:14:27-0700",
+  "total_elapsed_s": 68.7,
+  "prev_hash": "c6305c537efac274",
+  "hash": "08d3f5abac3c20ff"
+}

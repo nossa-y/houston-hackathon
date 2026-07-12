@@ -1,0 +1,80 @@
+{
+  "mission_id": "e32600d5a0ef",
+  "task": "On https://books.toscrape.com, open the Poetry category. Identify every book rated exactly FIVE stars (the star rating shown on each book card), list their titles, and report the combined total price of those five-star books in pounds.",
+  "executor_session_id": "e68e8c15-1f6d-4dd2-998f-414845aba087",
+  "executor_agent": "h/web-surfer-flash",
+  "verifier_agent": "h/web-surfer-pro",
+  "verifier_session_ids": [
+    "cdcff431-d7f7-4f5f-b8c3-c7e00fd32c53"
+  ],
+  "attempts": [
+    {
+      "n": 1,
+      "claimed_answer": "In the Poetry category on https://books.toscrape.com, I found **6 books rated exactly five stars**:\n\n| Book Title | Price (£) |\n|------------|----------|\n| Quarter Life Poetry: Poems | £50.89 |\n| Out of Print: City Poetry | £53.64 |\n| Les Fleurs du Mal | £29.04 |\n| Leave This Song Behind | £51.17 |\n| The Collected Poems of W.B. Yeats | £15.42 |\n| Booked | £17.49 |\n\n**Combined total price: £217.65**",
+      "verdict": {
+        "verified": true,
+        "confidence": 1.0,
+        "checked_claims": [
+          {
+            "claim": "6 books rated exactly five stars in Poetry category",
+            "observed": "6 books confirmed with 5 yellow stars on individual product pages: Quarter Life Poetry, Out of Print: City Poetry, Les Fleurs du Mal, Leave This Song Behind, The Collected Poems of W.B. Yeats, Booked",
+            "matches": true
+          },
+          {
+            "claim": "Quarter Life Poetry: Poems priced at £50.89",
+            "observed": "Product page shows £50.89, 5 stars",
+            "matches": true
+          },
+          {
+            "claim": "Out of Print: City Poetry priced at £53.64",
+            "observed": "Product page shows £53.64, 5 stars",
+            "matches": true
+          },
+          {
+            "claim": "Les Fleurs du Mal priced at £29.04",
+            "observed": "Product page shows £29.04, 5 stars",
+            "matches": true
+          },
+          {
+            "claim": "Leave This Song Behind priced at £51.17",
+            "observed": "Product page shows £51.17, 5 stars",
+            "matches": true
+          },
+          {
+            "claim": "The Collected Poems of W.B. Yeats priced at £15.42",
+            "observed": "Product page shows £15.42, 5 stars",
+            "matches": true
+          },
+          {
+            "claim": "Booked priced at £17.49",
+            "observed": "Product page shows £17.49, 5 stars",
+            "matches": true
+          },
+          {
+            "claim": "Combined total price £217.65",
+            "observed": "Sum of verified prices: 50.89 + 53.64 + 29.04 + 51.17 + 15.42 + 17.49 = 217.65",
+            "matches": true
+          }
+        ],
+        "divergence": null,
+        "diagnosis": null
+      },
+      "healed_with": null,
+      "elapsed_s": 231.9
+    }
+  ],
+  "final_status": "verified",
+  "final_answer": "In the Poetry category on https://books.toscrape.com, I found **6 books rated exactly five stars**:\n\n| Book Title | Price (£) |\n|------------|----------|\n| Quarter Life Poetry: Poems | £50.89 |\n| Out of Print: City Poetry | £53.64 |\n| Les Fleurs du Mal | £29.04 |\n| Leave This Song Behind | £51.17 |\n| The Collected Poems of W.B. Yeats | £15.42 |\n| Booked | £17.49 |\n\n**Combined total price: £217.65**",
+  "agent_view": "https://platform.hcompany.ai/agent-view/e68e8c15-1f6d-4dd2-998f-414845aba087",
+  "verifier_views": [
+    "https://platform.hcompany.ai/agent-view/cdcff431-d7f7-4f5f-b8c3-c7e00fd32c53"
+  ],
+  "local_audit": null,
+  "arbiter": null,
+  "arbiter_view": null,
+  "started_at": "2026-07-12T02:18:59-0700",
+  "finished_at": "2026-07-12T02:22:52-0700",
+  "total_elapsed_s": 233.7,
+  "prev_hash": "37c009c14dcb7cff",
+  "hash": "b2a24fa62ed5218b"
+}

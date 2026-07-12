@@ -1,0 +1,67 @@
+{
+  "mission_id": "b63dbdd890c1",
+  "task": "On https://books.toscrape.com, open the Mystery category and count exactly how many books in that category cost less than 20 pounds. Check every page of the category. Report the exact count.",
+  "executor_session_id": "47e5e1bd-8bf9-4242-b16b-5beb4d4e7ab6",
+  "executor_agent": "h/web-surfer-flash",
+  "verifier_agent": "h/web-surfer-pro",
+  "verifier_session_ids": [
+    "4a056cb2-72e1-418d-b747-bf4b21833145"
+  ],
+  "attempts": [
+    {
+      "n": 1,
+      "claimed_answer": "There are **10 books** in the Mystery category that cost less than £20.\n\n**Page 1 (7 books under £20):**\n1. In a Dark, Dark Wood - £19.63\n2. A Murder in Time - £16.64\n3. That Darkness (Gardiner and ...) - £13.92\n4. Tastes Like Fear (DI ...) - £10.69\n5. A Study in Scarlet ... - £16.73\n6. Hide Away (Eve Duncan ...) - £11.84\n7. Playing with Fire - £13.71\n\n**Page 2 (3 books under £20):**\n1. The Cuckoo's Calling (Cormoran ...) - £19.21\n2. The Girl You Lost - £12.29\n3. The Girl In The ... - £15.85\n\n**Total: 10 books** out of 32 mystery books cost less than £20.",
+      "verdict": {
+        "verified": true,
+        "confidence": 1.0,
+        "checked_claims": [
+          {
+            "claim": "10 books total in Mystery category cost less than £20",
+            "observed": "Verified: 7 books on page 1 + 3 books on page 2 = 10 books under £20",
+            "matches": true
+          },
+          {
+            "claim": "Page 1 has 7 books under £20",
+            "observed": "Verified: In a Dark Dark Wood (£19.63), A Murder in Time (£16.64), That Darkness (£13.92), Tastes Like Fear (£10.69), A Study in Scarlet (£16.73), Hide Away (£11.84), Playing with Fire (£13.71)",
+            "matches": true
+          },
+          {
+            "claim": "Page 2 has 3 books under £20",
+            "observed": "Verified: The Cuckoo's Calling (£19.21), The Girl You Lost (£12.29), The Girl In The... (£15.85)",
+            "matches": true
+          },
+          {
+            "claim": "32 total mystery books",
+            "observed": "Verified: Page 1 shows 1-20 of 32, Page 2 shows 21-32 of 32",
+            "matches": true
+          }
+        ],
+        "divergence": null,
+        "diagnosis": null
+      },
+      "healed_with": null,
+      "elapsed_s": 134.1
+    }
+  ],
+  "final_status": "verified",
+  "final_answer": "There are **10 books** in the Mystery category that cost less than £20.\n\n**Page 1 (7 books under £20):**\n1. In a Dark, Dark Wood - £19.63\n2. A Murder in Time - £16.64\n3. That Darkness (Gardiner and ...) - £13.92\n4. Tastes Like Fear (DI ...) - £10.69\n5. A Study in Scarlet ... - £16.73\n6. Hide Away (Eve Duncan ...) - £11.84\n7. Playing with Fire - £13.71\n\n**Page 2 (3 books under £20):**\n1. The Cuckoo's Calling (Cormoran ...) - £19.21\n2. The Girl You Lost - £12.29\n3. The Girl In The ... - £15.85\n\n**Total: 10 books** out of 32 mystery books cost less than £20.",
+  "agent_view": "https://platform.hcompany.ai/agent-view/47e5e1bd-8bf9-4242-b16b-5beb4d4e7ab6",
+  "verifier_views": [
+    "https://platform.hcompany.ai/agent-view/4a056cb2-72e1-418d-b747-bf4b21833145"
+  ],
+  "local_audit": {
+    "engine": "Holo-3.1-35B-A3B q4_k_m via llama.cpp (on-device, Apple Silicon)",
+    "checked_observation": "Verified: Page 1 shows 1-20 of 32, Page 2 shows 21-32 of 32",
+    "result": "No. The screenshot shows only 12 books on Page 1, not 20.",
+    "shots_checked": 3,
+    "supports": false,
+    "latency_s": 14.29
+  },
+  "arbiter": null,
+  "arbiter_view": null,
+  "started_at": "2026-07-12T02:45:02-0700",
+  "finished_at": "2026-07-12T02:47:40-0700",
+  "total_elapsed_s": 158.4,
+  "prev_hash": "54a61cbeae0ba10e",
+  "hash": "7dc8c89322723c50"
+}

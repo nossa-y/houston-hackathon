@@ -1,0 +1,67 @@
+{
+  "mission_id": "c5441f83d66c",
+  "task": "Go to https://books.toscrape.com and report the exact title and price of the single most expensive book in the Philosophy category.",
+  "executor_session_id": "d9315c41-f43c-4315-9d89-ef7fe39e53ce",
+  "executor_agent": "h/web-surfer-flash",
+  "verifier_agent": "h/web-surfer-pro",
+  "verifier_session_ids": [
+    "709e3c99-1baa-48f7-9db7-3bd5070e51c5"
+  ],
+  "attempts": [
+    {
+      "n": 1,
+      "claimed_answer": "The most expensive book in the Philosophy category at https://books.toscrape.com is:\n\n**Title:** The Death of Humanity: and the Case for Life\n**Price:** £58.11\n\nThis was determined by filtering to the Philosophy category (11 results), comparing all book prices, and verifying the full title on the product page.",
+      "verdict": {
+        "verified": true,
+        "confidence": 1.0,
+        "checked_claims": [
+          {
+            "claim": "Title: The Death of Humanity: and the Case for Life",
+            "observed": "Product page title shows 'The Death of Humanity: and the Case for Life'",
+            "matches": true
+          },
+          {
+            "claim": "Price: £58.11",
+            "observed": "Product page shows Price (excl. tax): £58.11 and Price (incl. tax): £58.11",
+            "matches": true
+          },
+          {
+            "claim": "Most expensive book in Philosophy category",
+            "observed": "Compared all 11 Philosophy books: £58.11 is highest (next is £54.21 for Proofs of God)",
+            "matches": true
+          },
+          {
+            "claim": "11 results in Philosophy category",
+            "observed": "Category page shows 11 books total",
+            "matches": true
+          }
+        ],
+        "divergence": null,
+        "diagnosis": null
+      },
+      "healed_with": null,
+      "elapsed_s": 103.6
+    }
+  ],
+  "final_status": "verified",
+  "final_answer": "The most expensive book in the Philosophy category at https://books.toscrape.com is:\n\n**Title:** The Death of Humanity: and the Case for Life\n**Price:** £58.11\n\nThis was determined by filtering to the Philosophy category (11 results), comparing all book prices, and verifying the full title on the product page.",
+  "agent_view": "https://platform.hcompany.ai/agent-view/d9315c41-f43c-4315-9d89-ef7fe39e53ce",
+  "verifier_views": [
+    "https://platform.hcompany.ai/agent-view/709e3c99-1baa-48f7-9db7-3bd5070e51c5"
+  ],
+  "local_audit": {
+    "engine": "Holo-3.1-35B-A3B q4_k_m via llama.cpp (on-device, Apple Silicon)",
+    "checked_observation": "Category page shows 11 books total",
+    "result": "No. The screenshot shows 12 books, not 11.",
+    "shots_checked": 3,
+    "supports": false,
+    "latency_s": 9.78
+  },
+  "arbiter": null,
+  "arbiter_view": null,
+  "started_at": "2026-07-12T02:41:21-0700",
+  "finished_at": "2026-07-12T02:43:24-0700",
+  "total_elapsed_s": 122.3,
+  "prev_hash": "bc959f8c8f5c8764",
+  "hash": "aeaeec5489b8d5aa"
+}

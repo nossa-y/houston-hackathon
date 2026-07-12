@@ -1,0 +1,45 @@
+{
+  "mission_id": "5c281ad2a8b6",
+  "task": "Go to https://books.toscrape.com and report the exact title and price of the single most expensive book in the Philosophy category.",
+  "executor_session_id": "8ea5d1d4-910f-4e43-bd83-7a133a90ad79",
+  "executor_agent": "h/web-surfer-flash",
+  "verifier_agent": "h/web-surfer-pro",
+  "verifier_session_ids": [
+    "13464a52-89df-4704-b57f-d5d911a66bf2"
+  ],
+  "attempts": [
+    {
+      "n": 1,
+      "claimed_answer": "The most expensive book in the Philosophy category is **The Death of Humanity** priced at **£58.11**.",
+      "verdict": {
+        "verified": true,
+        "confidence": 1.0,
+        "checked_claims": [
+          {
+            "claim": "The most expensive book in the Philosophy category is The Death of Humanity priced at £58.11",
+            "observed": "The Death of Humanity is listed at £58.11 in the Philosophy category, which is higher than all other 10 books in the category (highest alternative is Proofs of God at £54.21)",
+            "matches": true
+          }
+        ],
+        "divergence": null,
+        "diagnosis": null
+      },
+      "healed_with": null,
+      "elapsed_s": 72.2
+    }
+  ],
+  "final_status": "verified",
+  "final_answer": "The most expensive book in the Philosophy category is **The Death of Humanity** priced at **£58.11**.",
+  "agent_view": "https://platform.hcompany.ai/agent-view/8ea5d1d4-910f-4e43-bd83-7a133a90ad79",
+  "verifier_views": [
+    "https://platform.hcompany.ai/agent-view/13464a52-89df-4704-b57f-d5d911a66bf2"
+  ],
+  "local_audit": null,
+  "arbiter": null,
+  "arbiter_view": null,
+  "started_at": "2026-07-12T02:26:57-0700",
+  "finished_at": "2026-07-12T02:28:11-0700",
+  "total_elapsed_s": 74.3,
+  "prev_hash": "b2a24fa62ed5218b",
+  "hash": "1510bd94955d4af5"
+}

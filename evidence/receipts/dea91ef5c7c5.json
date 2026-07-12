@@ -1,0 +1,56 @@
+{
+  "mission_id": "dea91ef5c7c5",
+  "task": "Go to https://books.toscrape.com and report the exact title and price of the single most expensive book in the Classics category.",
+  "executor_session_id": "979251b5-aa24-4502-adc6-72a5be32a66d",
+  "executor_agent": "h/web-surfer-flash",
+  "verifier_agent": "h/web-surfer-pro",
+  "verifier_session_ids": [
+    "96b7acc9-a73b-482f-a8fc-2de72d084af4"
+  ],
+  "attempts": [
+    {
+      "n": 1,
+      "claimed_answer": "The most expensive book in the Classics category is **Candide** at **£58.63**.",
+      "verdict": {
+        "verified": true,
+        "confidence": 1.0,
+        "checked_claims": [
+          {
+            "claim": "The most expensive book in the Classics category is Candide",
+            "observed": "Candide at £58.63 is the highest priced book among all 19 books in the Classics category",
+            "matches": true
+          },
+          {
+            "claim": "The price is £58.63",
+            "observed": "Candide is priced at £58.63 as shown on the Classics category page",
+            "matches": true
+          }
+        ],
+        "divergence": null,
+        "diagnosis": null
+      },
+      "healed_with": null,
+      "elapsed_s": 89.8
+    }
+  ],
+  "final_status": "verified",
+  "final_answer": "The most expensive book in the Classics category is **Candide** at **£58.63**.",
+  "agent_view": "https://platform.hcompany.ai/agent-view/979251b5-aa24-4502-adc6-72a5be32a66d",
+  "verifier_views": [
+    "https://platform.hcompany.ai/agent-view/96b7acc9-a73b-482f-a8fc-2de72d084af4"
+  ],
+  "local_audit": {
+    "engine": "Holo-3.1-35B-A3B q4_k_m via llama.cpp (on-device, Apple Silicon)",
+    "checked_observation": "Candide is priced at £58.63 as shown on the Classics category page",
+    "result": "No. The screenshot does not show \"Candide\" or any price of £58.63.",
+    "supports": false,
+    "latency_s": 4.92
+  },
+  "arbiter": null,
+  "arbiter_view": null,
+  "started_at": "2026-07-12T02:33:20-0700",
+  "finished_at": "2026-07-12T02:34:58-0700",
+  "total_elapsed_s": 98.6,
+  "prev_hash": "1510bd94955d4af5",
+  "hash": "158abce948d2a450"
+}

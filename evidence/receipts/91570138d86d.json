@@ -1,0 +1,133 @@
+{
+  "mission_id": "91570138d86d",
+  "task": "On https://books.toscrape.com, open the Poetry category. Identify every book rated exactly FIVE stars (the star rating shown on each book card), list their titles, and report the combined total price of those five-star books in pounds.",
+  "executor_session_id": "68ec0375-f770-4c8c-9c65-aff2b227f2f9",
+  "executor_agent": "h/web-surfer-flash",
+  "verifier_agent": "h/web-surfer-pro",
+  "verifier_session_ids": [
+    "44f9c05d-3534-4db9-95e4-51b6d0ed444b",
+    "afa13359-1305-4ee4-acc5-63121737608b"
+  ],
+  "attempts": [
+    {
+      "n": 1,
+      "claimed_answer": "I navigated to https://books.toscrape.com and opened the Poetry category, which contains 19 books total.\n\n**Books rated exactly 5 stars (8 titles):**\n\n1. Untitled Collection: Sabbath Poems - £14.27\n2. Poems That Make Grown Women Cry - £14.19\n3. Quarter Life Poetry: Poems - £50.89\n4. Out of Print: City - £53.64\n5. Les Fleurs du Mal - £29.04\n6. Leave This Song Behind - £51.17\n7. The Collected Poems of... - £15.42\n8. Booked - £17.49\n\n**Combined total price: £246.11**",
+      "verdict": {
+        "verified": false,
+        "confidence": 1.0,
+        "checked_claims": [
+          {
+            "claim": "8 books rated exactly 5 stars in Poetry category",
+            "observed": "Only 6 books rated exactly 5 stars: Quarter Life Poetry: Poems, Out of Print: City, Les Fleurs du Mal, Leave This Song Behind, The Collected Poems of..., Booked",
+            "matches": false
+          },
+          {
+            "claim": "Untitled Collection: Sabbath Poems is 5-star rated at £14.27",
+            "observed": "Untitled Collection: Sabbath Poems has 4-star rating at £14.27",
+            "matches": false
+          },
+          {
+            "claim": "Poems That Make Grown Women Cry is 5-star rated at £14.19",
+            "observed": "Poems That Make Grown Women Cry has 4-star rating at £14.19",
+            "matches": false
+          },
+          {
+            "claim": "Combined total price of £246.11",
+            "observed": "Combined total of 6 five-star books is £217.65 (50.89+53.64+29.04+51.17+15.42+17.49)",
+            "matches": false
+          }
+        ],
+        "divergence": "The claim incorrectly identifies 8 five-star books totaling £246.11, but only 6 books have 5-star ratings with a combined total of £217.65.",
+        "diagnosis": "Filter poetry books by 5-star rating and sum only those prices; exclude 4-star books like 'Untitled Collection: Sabbath Poems' and 'Poems That Make Grown Women Cry'."
+      },
+      "healed_with": null,
+      "elapsed_s": 121.2
+    },
+    {
+      "n": 2,
+      "claimed_answer": "I navigated to https://books.toscrape.com and opened the Poetry category, which contains 19 books total.\n\n**Books rated exactly 5 stars (6 titles):**\n\n1. Quarter Life Poetry: Poems - £50.89\n2. Out of Print: City - £53.64\n3. Les Fleurs du Mal - £29.04\n4. Leave This Song Behind - £51.17\n5. The Collected Poems of... - £15.42\n6. Booked - £17.49\n\n**Combined total price: £217.65**\n\nCorrection: I previously misidentified two books with 4-star ratings (Untitled Collection: Sabbath Poems at £14.27 and Poems That Make Grown Women Cry at £14.19) as 5-star books. Those have been excluded from the final count.",
+      "verdict": {
+        "verified": true,
+        "confidence": 1.0,
+        "checked_claims": [
+          {
+            "claim": "Poetry category contains 19 books total",
+            "observed": "Page shows 19 results in Poetry category",
+            "matches": true
+          },
+          {
+            "claim": "6 books rated exactly 5 stars",
+            "observed": "6 books with 5 yellow stars visible: Quarter Life Poetry, Out of Print: City, Les Fleurs du Mal, Leave This Song Behind, The Collected Poems of..., Booked",
+            "matches": true
+          },
+          {
+            "claim": "Quarter Life Poetry: Poems - £50.89",
+            "observed": "£50.89 with 5 stars, verified on detail page",
+            "matches": true
+          },
+          {
+            "claim": "Out of Print: City - £53.64",
+            "observed": "£53.64 with 5 stars, verified on detail page",
+            "matches": true
+          },
+          {
+            "claim": "Les Fleurs du Mal - £29.04",
+            "observed": "£29.04 with 5 stars",
+            "matches": true
+          },
+          {
+            "claim": "Leave This Song Behind - £51.17",
+            "observed": "£51.17 with 5 stars",
+            "matches": true
+          },
+          {
+            "claim": "The Collected Poems of... - £15.42",
+            "observed": "£15.42 with 5 stars",
+            "matches": true
+          },
+          {
+            "claim": "Booked - £17.49",
+            "observed": "£17.49 with 5 stars",
+            "matches": true
+          },
+          {
+            "claim": "Combined total price: £217.65",
+            "observed": "£50.89 + £53.64 + £29.04 + £51.17 + £15.42 + £17.49 = £217.65",
+            "matches": true
+          }
+        ],
+        "divergence": null,
+        "diagnosis": null
+      },
+      "healed_with": "Filter poetry books by 5-star rating and sum only those prices; exclude 4-star books like 'Untitled Collection: Sabbath Poems' and 'Poems That Make Grown Women Cry'.",
+      "elapsed_s": 161.4
+    }
+  ],
+  "final_status": "verified-by-arbiter",
+  "final_answer": "I navigated to https://books.toscrape.com and opened the Poetry category, which contains 19 books total.\n\n**Books rated exactly 5 stars (6 titles):**\n\n1. Quarter Life Poetry: Poems - £50.89\n2. Out of Print: City - £53.64\n3. Les Fleurs du Mal - £29.04\n4. Leave This Song Behind - £51.17\n5. The Collected Poems of... - £15.42\n6. Booked - £17.49\n\n**Combined total price: £217.65**\n\nCorrection: I previously misidentified two books with 4-star ratings (Untitled Collection: Sabbath Poems at £14.27 and Poems That Make Grown Women Cry at £14.19) as 5-star books. Those have been excluded from the final count.",
+  "agent_view": "https://platform.hcompany.ai/agent-view/68ec0375-f770-4c8c-9c65-aff2b227f2f9",
+  "verifier_views": [
+    "https://platform.hcompany.ai/agent-view/44f9c05d-3534-4db9-95e4-51b6d0ed444b",
+    "https://platform.hcompany.ai/agent-view/afa13359-1305-4ee4-acc5-63121737608b"
+  ],
+  "local_audit": {
+    "engine": "Holo-3.1-35B-A3B q4_k_m via llama.cpp (on-device, Apple Silicon)",
+    "checked_observation": "£50.89 + £53.64 + £29.04 + £51.17 + £15.42 + £17.49 = £217.65",
+    "result": "Yes. The prices listed in the screenshot match the values used in the equation.",
+    "shots_checked": 1,
+    "supports": true,
+    "latency_s": 4.74
+  },
+  "arbiter": {
+    "winner": "attempt_healed",
+    "corrected_answer": null,
+    "resolved_facts": "Verified on individual product pages: (1) 'Untitled Collection: Sabbath Poems 2014' has 4-star rating, not 5-star. (2) 'Poems That Make Grown Women Cry' has 4-star rating, not 5-star. (3) 'Quarter Life Poetry: Poems for the Young, Broke and Hangry' has 5-star rating. Visual inspection of category page confirms 6 five-star books: Quarter Life Poetry (£50.89), Out of Print: City (£53.64), Les Fleurs du Mal (£29.04), Leave This Song Behind (£51.17), The Collected Poems of... (£15.42), Booked (£17.49). Total: £217.65.",
+    "confidence": 1.0
+  },
+  "arbiter_view": "https://platform.hcompany.ai/agent-view/2446ae92-0b4f-4719-8df7-38b320e82d23",
+  "started_at": "2026-07-12T02:47:42-0700",
+  "finished_at": "2026-07-12T02:54:49-0700",
+  "total_elapsed_s": 427.8,
+  "prev_hash": "7dc8c89322723c50",
+  "hash": "bda9eec02cd158fc"
+}

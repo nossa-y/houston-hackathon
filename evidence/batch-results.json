@@ -1,0 +1,74 @@
+[
+  {
+    "round": 1,
+    "name": "philosophy-max-price",
+    "mission_id": "f46db401974d",
+    "status": "verified",
+    "attempts": 1,
+    "healed": false,
+    "arbiter": null,
+    "elapsed": 101.1,
+    "answer": "The most expensive book in the Philosophy category is **\"The Death of Humanity: ...\"** at **\u00a358.11**.",
+    "truth": "The Death of Humanity and the Case for Life, \u00a358.11"
+  },
+  {
+    "round": 1,
+    "name": "travel-top3-sum",
+    "mission_id": "740bb39c929c",
+    "status": "verified",
+    "attempts": 1,
+    "healed": false,
+    "arbiter": null,
+    "elapsed": 101.6,
+    "answer": "The three most expensive books in the Travel category at https://books.toscrape.com are:\n\n1. **A Year in Provence...** - \u00a356.88\n2. **Full Moon over Noah's Ark**",
+    "truth": "56.88 + 49.43 + 48.87 = \u00a3155.18"
+  },
+  {
+    "round": 1,
+    "name": "mystery-under20-count",
+    "mission_id": "b76092ee8212",
+    "status": "verified",
+    "attempts": 1,
+    "healed": false,
+    "arbiter": null,
+    "elapsed": 143.1,
+    "answer": "In the Mystery category on https://books.toscrape.com, there are exactly **10 books** that cost less than \u00a320.\n\n**Page 1 (books 1-20) - 7 books under \u00a320:**\n1. ",
+    "truth": "10 of 32"
+  },
+  {
+    "round": 1,
+    "name": "poetry-fivestar-total",
+    "mission_id": "7bf4ba8148e7",
+    "status": "unverified",
+    "attempts": 3,
+    "healed": true,
+    "arbiter": null,
+    "elapsed": 339.9,
+    "answer": "On the Poetry category page at https://books.toscrape.com, I found 9 books rated exactly FIVE stars:\n\n1. **Slow States of Collapse** (Elizabeth Best) - \u00a357.31\n2",
+    "truth": "6 books, \u00a3217.65"
+  },
+  {
+    "round": 1,
+    "name": "hn-top-story",
+    "mission_id": "d75a4b050a8a",
+    "status": "verified",
+    "attempts": 1,
+    "healed": false,
+    "arbiter": null,
+    "elapsed": 68.7,
+    "answer": "The #1 story on Hacker News is titled **\"Show HN: Mindwalk \u2013 Replay coding-agent sessions on a 3D map of your codebase\"** and it links to **github.com/cosmtrek*",
+    "truth": "dynamic - verifier checks live"
+  },
+  {
+    "round": 1,
+    "name": "wiki-two-tower-compare",
+    "mission_id": "e9f4bbc46d86",
+    "status": "verified",
+    "attempts": 1,
+    "healed": false,
+    "arbiter": null,
+    "elapsed": 253.2,
+    "answer": "The **Empire State Building** is taller than the Eiffel Tower when comparing the Eiffel Tower's total height to the Empire State Building's roof height.\n\n- **Ei",
+    "truth": "ESB roof 380m vs Eiffel 330m -> ESB by ~50m (tip-vs-roof confusion trap)"
+  }
+]

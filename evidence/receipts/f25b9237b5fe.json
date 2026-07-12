@@ -1,0 +1,62 @@
+{
+  "mission_id": "f25b9237b5fe",
+  "task": "Using Wikipedia, find the height of the Eiffel Tower and the roof height (not tip height) of the Empire State Building, both in metres, and report which structure is taller by that measure and by how many metres.",
+  "executor_session_id": "623e78c6-de2e-4a38-b53b-410828eed4db",
+  "executor_agent": "h/web-surfer-flash",
+  "verifier_agent": "h/web-surfer-pro",
+  "verifier_session_ids": [
+    "cfca1f0b-cf77-4d79-a462-7b9d9b3f9532"
+  ],
+  "attempts": [
+    {
+      "n": 1,
+      "claimed_answer": "The **Empire State Building** (at roof level) is taller than the Eiffel Tower.\n\n- **Eiffel Tower height**: 330 metres\n- **Empire State Building roof height**: 380 metres\n\nThe Empire State Building is taller by **50 metres**.\n\nSources: Wikipedia articles for Eiffel Tower and Empire State Building.",
+      "verdict": {
+        "verified": true,
+        "confidence": 1.0,
+        "checked_claims": [
+          {
+            "claim": "Eiffel Tower height: 330 metres",
+            "observed": "Wikipedia states 'The tower is 330 metres (1,083 ft) tall' with tip height confirmed as 330m in the General information box",
+            "matches": true
+          },
+          {
+            "claim": "Empire State Building roof height: 380 metres",
+            "observed": "Wikipedia states 'The building has a roof height of 1,250 feet (380 m)'",
+            "matches": true
+          },
+          {
+            "claim": "Empire State Building is taller by 50 metres",
+            "observed": "380m - 330m = 50m difference confirmed",
+            "matches": true
+          }
+        ],
+        "divergence": null,
+        "diagnosis": null
+      },
+      "healed_with": null,
+      "elapsed_s": 165.7
+    }
+  ],
+  "final_status": "verified",
+  "final_answer": "The **Empire State Building** (at roof level) is taller than the Eiffel Tower.\n\n- **Eiffel Tower height**: 330 metres\n- **Empire State Building roof height**: 380 metres\n\nThe Empire State Building is taller by **50 metres**.\n\nSources: Wikipedia articles for Eiffel Tower and Empire State Building.",
+  "agent_view": "https://platform.hcompany.ai/agent-view/623e78c6-de2e-4a38-b53b-410828eed4db",
+  "verifier_views": [
+    "https://platform.hcompany.ai/agent-view/cfca1f0b-cf77-4d79-a462-7b9d9b3f9532"
+  ],
+  "local_audit": {
+    "engine": "Holo-3.1-35B-A3B q4_k_m via llama.cpp (on-device, Apple Silicon)",
+    "checked_observation": "380m - 330m = 50m difference confirmed",
+    "result": "No. The screenshot states the Eiffel Tower is 330 meters tall, but there is no mention of a 380-meter measurement to confirm the 50-meter difference.",
+    "shots_checked": 3,
+    "supports": false,
+    "latency_s": 14.95
+  },
+  "arbiter": null,
+  "arbiter_view": null,
+  "started_at": "2026-07-12T02:57:21-0700",
+  "finished_at": "2026-07-12T03:00:31-0700",
+  "total_elapsed_s": 189.8,
+  "prev_hash": "e9ed3385c62070ee",
+  "hash": "f139d5dc506a6999"
+}

@@ -1,0 +1,57 @@
+{
+  "mission_id": "4bf1a7381308",
+  "task": "Go to https://books.toscrape.com and report the exact title and price of the most expensive book in the Science category.",
+  "executor_session_id": "9ab9cf6c-448d-40e2-b793-de1e1890fea5",
+  "executor_agent": "h/web-surfer-flash",
+  "verifier_agent": "h/web-surfer-pro",
+  "verifier_session_ids": [
+    "420185e9-08a0-423d-80c7-e052af12c77c"
+  ],
+  "attempts": [
+    {
+      "n": 1,
+      "claimed_answer": "The most expensive book in the Science category is **Immunity: How Elie Metchnikoff...** priced at **£57.36**.",
+      "verdict": {
+        "verified": true,
+        "confidence": 1.0,
+        "checked_claims": [
+          {
+            "claim": "The most expensive book in the Science category is 'Immunity: How Elie Metchnikoff...'",
+            "observed": "Immunity: How Elie Metchnikoff... priced at £57.36 is the highest-priced book among all 14 Science category books",
+            "matches": true
+          },
+          {
+            "claim": "Price is £57.36",
+            "observed": "The price displayed for Immunity: How Elie Metchnikoff... is exactly £57.36",
+            "matches": true
+          }
+        ],
+        "divergence": null,
+        "diagnosis": null
+      },
+      "healed_with": null,
+      "elapsed_s": 190.5
+    }
+  ],
+  "final_status": "verified",
+  "final_answer": "The most expensive book in the Science category is **Immunity: How Elie Metchnikoff...** priced at **£57.36**.",
+  "agent_view": "https://platform.hcompany.ai/agent-view/9ab9cf6c-448d-40e2-b793-de1e1890fea5",
+  "verifier_views": [
+    "https://platform.hcompany.ai/agent-view/420185e9-08a0-423d-80c7-e052af12c77c"
+  ],
+  "local_audit": {
+    "engine": "Holo-3.1-35B-A3B q4_k_m via llama.cpp (on-device, Apple Silicon)",
+    "checked_observation": "The price displayed for Immunity: How Elie Metchnikoff... is exactly £57.36",
+    "result": "Yes, the price displayed for Immunity: How Elie Metchnikoff... is exactly £57.36.",
+    "shots_checked": 2,
+    "supports": true,
+    "latency_s": 9.73
+  },
+  "arbiter": null,
+  "arbiter_view": null,
+  "started_at": "2026-07-12T03:16:07-0700",
+  "finished_at": "2026-07-12T03:19:37-0700",
+  "total_elapsed_s": 210.4,
+  "prev_hash": "1486358995602f87",
+  "hash": "d2c75c92ba827293"
+}

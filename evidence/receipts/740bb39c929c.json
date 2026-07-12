@@ -1,0 +1,57 @@
+{
+  "mission_id": "740bb39c929c",
+  "task": "On https://books.toscrape.com, open the Travel category, find the three most expensive books in that category, and report their titles with prices and the combined total price in pounds.",
+  "executor_session_id": "5ff99cdd-d74f-4b5c-8df1-61aadc36868c",
+  "executor_agent": "h/web-surfer-flash",
+  "verifier_agent": "h/web-surfer-pro",
+  "verifier_session_ids": [
+    "56c19f09-c449-40b3-9018-9fa98200f2a6"
+  ],
+  "attempts": [
+    {
+      "n": 1,
+      "claimed_answer": "The three most expensive books in the Travel category at https://books.toscrape.com are:\n\n1. **A Year in Provence...** - £56.88\n2. **Full Moon over Noah's Ark** - £49.43\n3. **See America: A Celebration...** - £48.87\n\n**Combined total: £155.18**",
+      "verdict": {
+        "verified": true,
+        "confidence": 1.0,
+        "checked_claims": [
+          {
+            "claim": "The three most expensive books in Travel category are A Year in Provence (£56.88), Full Moon over Noah's Ark (£49.43), and See America: A Celebration (£48.87)",
+            "observed": "Confirmed on books.toscrape.com Travel category page: A Year in Provence £56.88, Full Moon over Noah's Ark £49.43, See America: A Celebration £48.87 - these are the highest three prices among all 11 books",
+            "matches": true
+          },
+          {
+            "claim": "Combined total price is £155.18",
+            "observed": "Mathematical verification: £56.88 + £49.43 + £48.87 = £155.18",
+            "matches": true
+          }
+        ],
+        "divergence": null,
+        "diagnosis": null
+      },
+      "healed_with": null,
+      "elapsed_s": 81.8
+    }
+  ],
+  "final_status": "verified",
+  "final_answer": "The three most expensive books in the Travel category at https://books.toscrape.com are:\n\n1. **A Year in Provence...** - £56.88\n2. **Full Moon over Noah's Ark** - £49.43\n3. **See America: A Celebration...** - £48.87\n\n**Combined total: £155.18**",
+  "agent_view": "https://platform.hcompany.ai/agent-view/5ff99cdd-d74f-4b5c-8df1-61aadc36868c",
+  "verifier_views": [
+    "https://platform.hcompany.ai/agent-view/56c19f09-c449-40b3-9018-9fa98200f2a6"
+  ],
+  "local_audit": {
+    "engine": "Holo-3.1-35B-A3B q4_k_m via llama.cpp (on-device, Apple Silicon)",
+    "checked_observation": "Mathematical verification: £56.88 + £49.43 + £48.87 = £155.18",
+    "result": "Yes. The prices of the books \"A Year in Provence,\" \"Full Moon over Noah's Ark,\" and \"See America: A Celebration of Our National Parks and Monuments\" are £56.88,",
+    "shots_checked": 2,
+    "supports": true,
+    "latency_s": 10.83
+  },
+  "arbiter": null,
+  "arbiter_view": null,
+  "started_at": "2026-07-12T03:03:29-0700",
+  "finished_at": "2026-07-12T03:05:11-0700",
+  "total_elapsed_s": 101.6,
+  "prev_hash": "fb00e21f4b8eb078",
+  "hash": "4170ece9fd38d147"
+}

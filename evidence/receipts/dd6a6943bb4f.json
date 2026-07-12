@@ -1,0 +1,67 @@
+{
+  "mission_id": "dd6a6943bb4f",
+  "task": "On https://books.toscrape.com, open the Travel category, find the three most expensive books in that category, and report their titles with prices and the combined total price in pounds.",
+  "executor_session_id": "d847c174-3add-423d-8d79-c9830488df48",
+  "executor_agent": "h/web-surfer-flash",
+  "verifier_agent": "h/web-surfer-pro",
+  "verifier_session_ids": [
+    "5abc3c06-6404-44c0-908a-d64b32fe7a9f"
+  ],
+  "attempts": [
+    {
+      "n": 1,
+      "claimed_answer": "The three most expensive books in the Travel category are:\n\n1. **A Year in Provence** - £56.88\n2. **Full Moon over Noah's Ark** - £49.43\n3. **See America: A Celebration of America's Natural, Cultural, and Historical Sites** - £48.87\n\n**Combined total: £155.18**",
+      "verdict": {
+        "verified": true,
+        "confidence": 1.0,
+        "checked_claims": [
+          {
+            "claim": "A Year in Provence - £56.88 is the most expensive book in Travel category",
+            "observed": "A Year in Provence priced at £56.88, highest price among all 11 Travel books",
+            "matches": true
+          },
+          {
+            "claim": "Full Moon over Noah's Ark - £49.43 is the second most expensive book",
+            "observed": "Full Moon over Noah's Ark priced at £49.43, second highest price",
+            "matches": true
+          },
+          {
+            "claim": "See America: A Celebration... - £48.87 is the third most expensive book",
+            "observed": "See America: A Celebration priced at £48.87, third highest price",
+            "matches": true
+          },
+          {
+            "claim": "Combined total price is £155.18",
+            "observed": "Sum of three prices: 56.88 + 49.43 + 48.87 = 155.18",
+            "matches": true
+          }
+        ],
+        "divergence": null,
+        "diagnosis": null
+      },
+      "healed_with": null,
+      "elapsed_s": 80.0
+    }
+  ],
+  "final_status": "verified",
+  "final_answer": "The three most expensive books in the Travel category are:\n\n1. **A Year in Provence** - £56.88\n2. **Full Moon over Noah's Ark** - £49.43\n3. **See America: A Celebration of America's Natural, Cultural, and Historical Sites** - £48.87\n\n**Combined total: £155.18**",
+  "agent_view": "https://platform.hcompany.ai/agent-view/d847c174-3add-423d-8d79-c9830488df48",
+  "verifier_views": [
+    "https://platform.hcompany.ai/agent-view/5abc3c06-6404-44c0-908a-d64b32fe7a9f"
+  ],
+  "local_audit": {
+    "engine": "Holo-3.1-35B-A3B q4_k_m via llama.cpp (on-device, Apple Silicon)",
+    "checked_observation": "Sum of three prices: 56.88 + 49.43 + 48.87 = 155.18",
+    "result": "Yes. The sum of the three prices is correctly calculated as 155.18.",
+    "shots_checked": 1,
+    "supports": true,
+    "latency_s": 4.82
+  },
+  "arbiter": null,
+  "arbiter_view": null,
+  "started_at": "2026-07-12T02:43:25-0700",
+  "finished_at": "2026-07-12T02:45:00-0700",
+  "total_elapsed_s": 95.9,
+  "prev_hash": "aeaeec5489b8d5aa",
+  "hash": "54a61cbeae0ba10e"
+}

@@ -1,0 +1,3 @@
+synthesized 468524 wav bytes -> 234240 pcm24k bytes
+heard: 'Find the most expensive book in the Travel category on books.toscrape.com.'
+word overlap: 92%

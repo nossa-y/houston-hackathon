@@ -1,0 +1,48 @@
+{
+  "mission_id": "fb135fc50a39",
+  "task": "Go to https://en.wikipedia.org/wiki/Eiffel_Tower and report the tower's height in metres and the year it was completed.",
+  "executor_session_id": "97be54b2-800f-4f53-a548-6bcc35d84a8c",
+  "executor_agent": "h/web-surfer-flash",
+  "verifier_agent": "h/web-surfer-pro",
+  "verifier_session_ids": [
+    "57332ccf-4db9-4d51-84c6-e19f6ae8f4e9"
+  ],
+  "attempts": [
+    {
+      "n": 1,
+      "claimed_answer": "The Eiffel Tower is 330 metres tall and was completed in 1889.",
+      "verdict": {
+        "verified": true,
+        "confidence": 1.0,
+        "checked_claims": [
+          {
+            "claim": "The Eiffel Tower is 330 metres tall",
+            "observed": "Wikipedia states: 'The tower is 330 metres (1,083 ft) tall'",
+            "matches": true
+          },
+          {
+            "claim": "The Eiffel Tower was completed in 1889",
+            "observed": "Wikipedia states the tower was 'designed and built from 1887 to 1889' and was 'constructed as the centerpiece of the 1889 World's Fair'",
+            "matches": true
+          }
+        ],
+        "divergence": null,
+        "diagnosis": null
+      },
+      "healed_with": null,
+      "elapsed_s": 53.9
+    }
+  ],
+  "final_status": "verified",
+  "final_answer": "The Eiffel Tower is 330 metres tall and was completed in 1889.",
+  "agent_view": "https://platform.hcompany.ai/agent-view/97be54b2-800f-4f53-a548-6bcc35d84a8c",
+  "verifier_views": [
+    "https://platform.hcompany.ai/agent-view/57332ccf-4db9-4d51-84c6-e19f6ae8f4e9"
+  ],
+  "local_audit": null,
+  "started_at": "2026-07-12T01:55:52-0700",
+  "finished_at": "2026-07-12T01:56:48-0700",
+  "total_elapsed_s": 56.3,
+  "prev_hash": "genesis",
+  "hash": "ac4bc074a06bd761"
+}
