@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: Apache-2.0
+#
+# OpenShell network-policy preset that lets a NemoClaw (nemohermes) sandbox reach the H Company
+# agent platform. The baseline Hermes policy allows Nous, PyPI, NVIDIA inference, and messaging
+# endpoints, but NOT agp.hcompany.ai, so the hosted hai-agent-platform MCP server is blocked
+# without this preset. Schema mirrors NemoClaw's shipped presets (nemoclaw-blueprint/policies/presets/).
+#
+# Apply to a running sandbox:
+#   nemohermes <sandbox> policy-add --from-file nemoclaw/policies/hai-agent-platform.yaml
+# Or bake into the baseline: merge `network_policies` into agents/hermes/ (or
+# nemoclaw-blueprint/policies/) and re-run `nemohermes onboard`.
+
+preset:
+  name: hai-agent-platform
+  description: "H Company agent platform (agp): hosted MCP server + cloud agent API"
+
+network_policies:
+  hai-agent-platform:
+    name: hai-agent-platform
+    endpoints:
+      - host: agp.eu.hcompany.ai        # EU (the demos' default); use agp.hcompany.ai for US
+        port: 443
+        protocol: rest
+        enforcement: enforce
+        rules:
+          # Scoped to one host. Narrow the path to /mcp for stricter least-privilege once you've
+          # confirmed the endpoint; the agent only talks to the hosted MCP proxy, not agp directly.
+          - allow: { method: GET, path: "/**" }    # SSE streams and reads
+          - allow: { method: POST, path: "/**" }   # MCP JSON-RPC
+    binaries:
+      # The NemoClaw Hermes runtime that makes the calls (verified via openshell term). If your
+      # image differs, a denied request in `openshell term` names the real binary path to use.
+      - { path: /opt/hermes/.venv/bin/python3 }
