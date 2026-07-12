@@ -1,0 +1,32 @@
+[
+  {
+    "name": "philosophy-max-price",
+    "task": "Go to https://books.toscrape.com and report the exact title and price of the single most expensive book in the Philosophy category.",
+    "truth": "The Death of Humanity and the Case for Life, £58.11"
+  },
+  {
+    "name": "travel-top3-sum",
+    "task": "On https://books.toscrape.com, open the Travel category, find the three most expensive books in that category, and report their titles with prices and the combined total price in pounds.",
+    "truth": "56.88 + 49.43 + 48.87 = £155.18"
+  },
+  {
+    "name": "mystery-under20-count",
+    "task": "On https://books.toscrape.com, open the Mystery category and count exactly how many books in that category cost less than 20 pounds. Check every page of the category. Report the exact count.",
+    "truth": "10 of 32"
+  },
+  {
+    "name": "poetry-fivestar-total",
+    "task": "On https://books.toscrape.com, open the Poetry category. Identify every book rated exactly FIVE stars (the star rating shown on each book card), list their titles, and report the combined total price of those five-star books in pounds.",
+    "truth": "6 books, £217.65"
+  },
+  {
+    "name": "hn-top-story",
+    "task": "Go to https://news.ycombinator.com and report the exact title of the current #1 story and which domain it links to.",
+    "truth": "dynamic - verifier checks live"
+  },
+  {
+    "name": "wiki-two-tower-compare",
+    "task": "Using Wikipedia, find the height of the Eiffel Tower and the roof height (not tip height) of the Empire State Building, both in metres, and report which structure is taller by that measure and by how many metres.",
+    "truth": "ESB roof 380m vs Eiffel 330m -> ESB by ~50m (tip-vs-roof confusion trap)"
+  }
+]
