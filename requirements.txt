@@ -1,0 +1,8 @@
+hai-agents[cli]
+gradium
+fastapi
+uvicorn[standard]
+python-dotenv
+requests
+websockets
+pydantic
