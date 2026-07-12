@@ -1,0 +1,23 @@
+{
+  "name": "launch-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A product launch video, defined in code with Remotion",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render src/index.ts Launch out/launch-16x9.mp4",
+    "vertical": "remotion render src/index.ts LaunchVertical out/launch-9x16.mp4",
+    "titlecard": "remotion render src/index.ts TitleCard out/titlecard.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "@remotion/transitions": "^4.0.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "typescript": "^5.4.0"
+  }
+}

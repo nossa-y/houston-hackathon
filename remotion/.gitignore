@@ -1,0 +1,6 @@
+node_modules/
+out/
+.remotion/
+# fonts are fetched (see references/remotion-setup.md); source clips may hold private data
+public/*.ttf
+public/*.mp4
